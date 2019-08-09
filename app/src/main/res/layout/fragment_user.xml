@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              tools:context=".fragments.user.UserFragment"
+              android:orientation="vertical"
+              android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_requests"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_user_profil_dark"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
+            />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="15dp"
+            android:padding="15dp"
+    >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About you :"
+                android:textSize="35sp"
+        />
+
+        <TextView
+                android:id="@+id/tv_userFragment_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Firtname"/>
+        <TextView
+                android:id="@+id/tv_userFragment_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lastname"/>
+        <TextView
+                android:id="@+id/tv_userFragment_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"/>
+        <TextView
+                android:id="@+id/tv_userFragment_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"/>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btn_userFragment_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+    />
+
+</LinearLayout>

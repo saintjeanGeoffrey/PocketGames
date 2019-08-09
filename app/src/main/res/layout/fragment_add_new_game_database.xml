@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:scrollbars="vertical"
+             tools:context=".fragments.addGameToCollection.AddNewGameDatabaseFragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+        >
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Title :"
+            />
+
+            <EditText
+                    android:id="@+id/et_addNewGameDatabaseFragment_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/field_form"
+            />
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Platform :"
+            />
+
+            <Spinner
+                    android:id="@+id/Sp_addNewGameDatabaseFragment_listPlatforms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinner_form"
+                    android:spinnerMode="dialog"
+            />
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Genre :"
+            />
+
+            <Spinner
+                    android:id="@+id/Sp_addNewGameDatabaseFragment_listGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinner_form"
+                    android:spinnerMode="dialog"
+            />
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Editor :"
+            />
+
+            <Spinner
+                    android:id="@+id/Sp_addNewGameDatabaseFragment_listEditor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinner_form"
+                    android:spinnerMode="dialog"
+            />
+
+            <Button
+                    android:id="@+id/btn_addNewGameDatabaseFragment_selectImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select image cover"
+            />
+
+            <ImageView
+                    android:id="@+id/iv_addNewGameDatabaseFragment_imageSelected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_background"
+            />
+
+            <Button
+                    android:id="@+id/btn_addNewGameDatabaseFragment_addgame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add game"
+            />
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text=""
+            />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

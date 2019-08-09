@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.main.GameCollectionDetailFragment"
+>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+        >
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="170dp"
+                          android:background="@color/colorAccent" android:id="@+id/ll_gameDetailFragment_viewGroupBlur">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                           android:id="@+id/iv_gameDetailFragment_bgBlur"
+                           android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical" android:layout_marginTop="-150dp"
+                          android:padding="15dp"
+            >
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginBottom="25dp">
+
+                    <ImageView android:layout_width="0dp" android:layout_height="wrap_content"
+                               android:layout_weight="0.5"
+                               android:id="@+id/iv_gameDetailFragment_cover"
+                               android:src="@drawable/ic_launcher_background"
+                               android:layout_marginLeft="0dp"
+                               android:elevation="10dp"
+                    />
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:layout_weight="0.5"
+                              android:id="@+id/tv_gameDetailFragment_title"
+                              android:text="title game"
+                              android:textSize="20sp"
+                              android:paddingLeft="15dp"
+                              android:layout_gravity="bottom"
+                              android:textStyle="bold"
+                              android:textColor="#000"
+                    />
+                </LinearLayout>
+
+                <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                             android:stretchColumns="*"
+                >
+                    <TableRow>
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="Editor :"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                        />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:id="@+id/tv_gameDetailFragment_editor"
+                                  android:text="editor"
+                                  android:textSize="16sp"
+                        />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="Genre :"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                        />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:id="@+id/tv_gameDetailFragment_genre"
+                                  android:text="Genre"
+                                  android:textSize="16sp"
+                        />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="Platform :"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                        />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:id="@+id/tv_gameDetailFragment_platform"
+                                  android:text="Platform"
+                                  android:textSize="16sp"
+                        />
+                    </TableRow>
+                </TableLayout>
+
+
+                <TextView android:layout_width="match_parent" android:layout_height="1dp"
+                          android:layout_marginTop="25dp"
+                          android:layout_marginBottom="25dp"
+                          android:background="#999"/>
+
+
+                <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                             android:stretchColumns="*"
+                >
+                    <TableRow>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="Box state :"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                        />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:id="@+id/tv_gameDetailFragment_box"
+                                  android:text="Box state"
+                                  android:textSize="16sp"
+                        />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="Book state :"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                        />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:id="@+id/tv_gameDetailFragment_book"
+                                  android:text="Book state"
+                                  android:textSize="16sp"
+                        />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="Disc state :"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                        />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:id="@+id/tv_gameDetailFragment_disc"
+                                  android:text="Disc state"
+                                  android:textSize="16sp"
+                        />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:text="Additionnal description :"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                        />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:id="@+id/tv_gameDetailFragment_description"
+                                  android:text="Description game"
+                                  android:textSize="16sp"
+                        />
+                    </TableRow>
+                </TableLayout>
+
+                <!--Trick margin bottom-->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:layout_marginBottom="30dp"></LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

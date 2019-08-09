@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="primary_background_color">#2D3341</color>
+    <color name="reverse_button_font_color">#ffffff</color>
+    <color name="reverse_button_bg_color">#2D3341</color>
+    <color name="reverse_button_stroke_color">#ffffff</color>
+    <color name="normal_button_bg_color">#ffffff</color>
+    <color name="normal_button_font_color">#2D3341</color>
+</resources>

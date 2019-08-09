@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.addGameToCollection.AddBySearchFragment"
+             android:padding="15dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_addBySearchFragment_search"
+                android:hint="Search"
+        />
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_addBySearch_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#fff"
+        >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>

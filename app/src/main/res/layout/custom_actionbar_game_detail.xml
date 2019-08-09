@@ -1,0 +1,62 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:padding="10dp"
+              android:background="#fff"
+>
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="left">
+
+        <ImageButton
+                android:id="@+id/ibtn_custom_actionbar_detail_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_action_back"
+                android:background="#00FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "0.4">
+
+        <!--        <ImageView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "match_parent"
+                        android:src = "@drawable/ic_toomanygames" />-->
+
+        <TextView
+                android:id = "@+id/custom_actionbar_title"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginLeft = "10dp"
+                android:text = "Game details"
+                android:textSize = "16sp"
+                android:textColor = "#000"
+                android:textStyle = "bold"
+                android:gravity="center"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_marginRight = "10dp"
+            android:layout_weight = "0.3"
+            android:gravity = "right">
+
+
+        <ImageButton
+                android:id="@+id/ibtn_custom_actionbar_detail_options"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_action_options"
+                android:background="#00FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>

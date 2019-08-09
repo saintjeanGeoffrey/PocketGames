@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <!-- Action Bar Styles -->
+    <style name="ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="field_form">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/primary_background_color</item>
+        <item name="android:background">@drawable/field_form</item>
+        <item name="android:textColorHint">@drawable/field_focus</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="spinner_form">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/field_form</item>
+        <item name="android:textColorHint">@color/primary_background_color</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Animation de transition d'activity -->
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+</resources>

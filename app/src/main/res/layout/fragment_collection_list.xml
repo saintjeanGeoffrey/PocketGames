@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".fragments.main.CollectionListFragment"
+                android:background="#fff"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:focusableInTouchMode="true"
+>
+
+    <EditText android:id="@+id/et_collectionListFragment_search"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Search"
+              style="@style/field_form"
+              android:visibility="gone"
+              android:elevation="5dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+    />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_collectionListFragment_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/et_collectionListFragment_search"
+    >
+    </android.support.v7.widget.RecyclerView>
+
+    <!--Trick margin bottom-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_marginBottom="30dp">
+    </LinearLayout>
+
+</RelativeLayout>

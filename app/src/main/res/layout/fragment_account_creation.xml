@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".fragments.login.AccountCreationFragment"
+              android:background="@color/primary_background_color"
+              android:padding="20dp"
+              android:orientation="vertical"
+              android:gravity="center"
+>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+            android:id="@+id/et_accountCrFragment_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/field_form"
+            android:hint="Firstname"
+    />
+    <EditText
+            android:id="@+id/et_accountCrFragment_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/field_form"
+            android:hint="Lastname"
+    />
+    <Spinner
+            android:id="@+id/Sp_accountCrFragment_listCountires"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_form"
+            android:spinnerMode="dialog"
+    />
+    <EditText
+            android:id="@+id/et_accountCrFragment_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/field_form"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+    />
+    <EditText
+            android:id="@+id/et_accountCrFragment_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/field_form"
+            android:hint="Password"
+            android:inputType="textPassword"
+    />
+    <EditText
+            android:id="@+id/et_accountCrFragment_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/field_form"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+    />
+
+    <Button android:layout_width="250dp" android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="50dp"
+            android:layout_marginVertical="25dp"
+            android:id="@+id/btn_accountFragment_confirmeAccCreation"
+            android:text="@string/button_confirm"
+            android:background="@drawable/reverse_button_border"
+            android:textColor="@color/reverse_button_font_color"
+    />
+
+
+</LinearLayout>

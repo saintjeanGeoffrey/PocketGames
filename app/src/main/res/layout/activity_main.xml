@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragments.main.CollectionListFragment"
+        tools:openDrawer="start"
+        android:id="@+id/main_drawer"
+>
+
+    <RelativeLayout
+            android:id="@+id/rr_navBot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <!--emplacement des fragments-->
+        <RelativeLayout
+                android:id="@+id/LL_mainActivity_fragmentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_above="@id/bnv_mainActivity_bottom_navigation"
+        >
+        </RelativeLayout>
+
+        <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bnv_mainActivity_bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                app:menu="@menu/bottom_nav_menu"
+                app:itemTextColor="#000000"
+                app:itemIconTint="#000000"
+        />
+    </RelativeLayout>
+
+    <!--float button add-->
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_wishlistFragment_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_add"
+            android:layout_alignBottom="@id/rr_navBot"
+            app:elevation="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#E94B4B"
+            app:backgroundTint="@android:color/white"
+            app:borderWidth="5dp"
+    />
+
+</RelativeLayout>

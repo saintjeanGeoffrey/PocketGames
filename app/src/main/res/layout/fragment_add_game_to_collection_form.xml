@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".fragments.addGameToCollection.AddGameToCollectionFormFragment"
+              android:orientation="vertical">
+
+
+
+ <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+
+     <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:padding="15dp"
+     >
+
+
+         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                       android:orientation="vertical">
+
+             <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:id="@+id/iv_addGameToCollection_cover"
+                        android:src="@drawable/ic_launcher_background"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+             />
+
+             <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                       android:id="@+id/tv_addGameToCollection_title"
+                       android:text="title game"
+                       android:textSize="35sp"
+                       android:gravity="center"
+             />
+
+             <TextView android:layout_width="match_parent" android:layout_height="1dp"
+                       android:layout_marginTop="25dp"
+                       android:layout_marginBottom="25dp"
+             android:background="#999"/>
+
+
+
+         </LinearLayout>
+
+         <TextView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="box ?"
+         />
+
+         <Spinner
+                 android:id="@+id/Sp_addGameToCollectionFragment_box"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 style="@style/spinner_form"
+                 android:spinnerMode="dialog"
+         />
+
+         <TextView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Book ?"
+         />
+
+         <Spinner
+                 android:id="@+id/Sp_addGameToCollectionFragment_book"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 style="@style/spinner_form"
+                 android:spinnerMode="dialog"
+         />
+
+         <TextView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="CD ?"
+         />
+
+         <Spinner
+                 android:id="@+id/Sp_addGameToCollectionFragment_disc"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 style="@style/spinner_form"
+                 android:spinnerMode="dialog"
+
+         />
+
+         <TextView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Description (optionnal)"
+         />
+
+         <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+         android:id="@+id/et_addGameToCollectionFragment_description"/>
+
+         <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                 android:id="@+id/btn_addGameToCollectionFragment_addGame"
+                 android:text="add game"
+         />
+
+
+
+     </LinearLayout>
+
+ </ScrollView>
+
+</LinearLayout>

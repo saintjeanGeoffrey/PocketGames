@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "563941896221",
+    "firebase_url": "https://pocket-games-5e865.firebaseio.com",
+    "project_id": "pocket-games-5e865",
+    "storage_bucket": "pocket-games-5e865.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563941896221:android:d58970b7ad0cf1fe",
+        "android_client_info": {
+          "package_name": "be.pocketgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563941896221-q5u2gubhl209k3jc6t6h3ll5e7bqgonv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD2ljuwTgxopomVlEuanFd4JFIuUs2_ao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563941896221-q5u2gubhl209k3jc6t6h3ll5e7bqgonv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

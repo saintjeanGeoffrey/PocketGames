@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/primary_background_color"
+        android:gravity="center"
+        android:focusableInTouchMode="true"
+        >
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:paddingBottom="100dp"
+              android:text="@string/title_app"
+              android:textSize="40sp"
+              android:textColor="#ffffff"
+              android:textStyle="bold"
+    />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="50dp">
+
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/et_loginActivity_email"
+                  android:hint="email"
+                  android:layout_marginBottom="25dp"
+                  style="@style/field_form"
+        />
+
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/et_loginActivity_password"
+                  android:hint="password"
+                  style="@style/field_form"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+        <Button android:layout_width="250dp" android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="50dp"
+                android:layout_marginVertical="25dp"
+                android:id="@+id/btn_loginActivity_login"
+                android:text="@string/button_login"
+                android:background="@drawable/normal_button"
+                android:textColor="@color/normal_button_font_color"
+        />
+
+        <Button android:layout_width="250dp" android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="50dp"
+                android:id="@+id/btn_loginActivity_createAccount"
+                android:text="@string/button_createAccount"
+                android:background="@drawable/reverse_button_border"
+                android:textColor="@color/reverse_button_font_color"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

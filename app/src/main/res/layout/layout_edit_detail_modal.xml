@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="250dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:padding="20dp">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/tv_layoutEditDetail_box"
+              android:text="Box :"
+              android:textSize="12sp"
+    />
+    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content"
+             android:id="@+id/sp_layoutEditDetail_box_edit"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/layoutEditDetail_book"
+              android:text="Book :"
+              android:textSize="12sp"
+    />
+    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content"
+             android:id="@+id/sp_layoutEditDetail_book_edit"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/tv_layoutEditDetail_disc"
+              android:text="Disc :"
+              android:textSize="12sp"
+    />
+    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content"
+             android:id="@+id/sp_layoutEditDetail_disc_edit"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/tv_layoutEditDetail_description"
+              android:text="Description :"
+              android:textSize="12sp"
+    />
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/et_layoutEditDetail_description_edit"
+    />
+</LinearLayout>
