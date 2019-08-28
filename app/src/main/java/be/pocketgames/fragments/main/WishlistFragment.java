@@ -68,7 +68,7 @@ public class WishlistFragment extends Fragment {
     private void initWishlist() {
         GetWishlistGameAsyncTask asyncTask = new GetWishlistGameAsyncTask();
         try {
-            mWishlist_games = asyncTask.execute( mCallbackFragment.getSnapshot() ).get();
+            mWishlist_games = asyncTask.execute( Database.getDataSnapshot() ).get();
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
